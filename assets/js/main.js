@@ -80,16 +80,19 @@
    * ------------------------------------------------------------------ */
   var url = new URL(window.location.href);
   var params = url.searchParams;
+  // The inline script in <head> already stripped the calculator params before GTM loaded
+  // and kept the original query here.
+  var initial = new URLSearchParams(typeof window.__LP_INITIAL_SEARCH === "string" ? window.__LP_INITIAL_SEARCH : url.search);
 
-  var calc = parseCalc(params);
+  var calc = parseCalc(initial);
   if (calc) writeJSON(session, STORAGE_CALC, calc);
-  else if (!params.has("v")) calc = readJSON(session, STORAGE_CALC); // reload keeps the numbers
+  else if (!initial.has("v")) calc = readJSON(session, STORAGE_CALC); // reload keeps the numbers
   if (calc && calc.present !== true) calc = null;
 
   // UTMs from this URL
   var urlUtm = null;
   UTM_KEYS.forEach(function (k) {
-    var v = params.get("utm_" + k);
+    var v = initial.get("utm_" + k);
     if (v) { urlUtm = urlUtm || {}; urlUtm[k] = clip(v); }
   });
   var utm = saveUtm(urlUtm);
@@ -459,7 +462,13 @@
   }
 
   function track(name, params) {
-    if (typeof window.gtag === "function") window.gtag("event", name, params || {});
+    // Google Tag Manager: push a plain event object (use a Custom Event trigger with this name).
+    window.dataLayer = window.dataLayer || [];
+    var ev = { event: name };
+    Object.keys(params || {}).forEach(function (k) { ev[k] = params[k]; });
+    window.dataLayer.push(ev);
+    // Direct GA4 (only when ga4Id is set in config.js and GTM is not used for GA4).
+    if (CFG.ga4Id && typeof window.gtag === "function") window.gtag("event", name, params || {});
   }
 
   function showSuccess(email) {
