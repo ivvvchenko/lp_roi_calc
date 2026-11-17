@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free ROI Fix Plan · Margarita Kononiuk, PPC</title>
+  <meta name="description" content="Send your website and get a 10-minute video and the 3 fixes that will grow your ad profit most, within 48 hours. Free. No call, no account access, no contract.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#0b3d33">
+  <meta property="og:title" content="Free ROI Fix Plan in 48 hours">
+  <meta property="og:description" content="A 10-minute video and your top 3 fixes to grow ad profit. Google Ads & Meta Ads. No call, no contract.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/margarita.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b3d33'/%3E%3Cpath d='M8 21l6-6 4 4 6-8' stroke='%2378e0b8' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- main.js strips calculator numbers from the address bar before it loads any analytics. -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <span class="brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        Margarita Kononiuk <span class="brand__role">· PPC</span>
+      </span>
+      <a class="link-quiet js-linkedin" href="https://www.linkedin.com/in/margarita-kononiuk" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM10 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21H10z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO + FORM -->
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="state-pill" id="statePill" hidden></p>
+          <h1 class="hero__title" id="heroTitle">Find the one fix that grows your ad profit most.</h1>
+          <p class="hero__sub" id="heroSub">Free ROI Fix Plan: a 10-minute video and your top 3 fixes, within 48 hours.</p>
+          <ul class="ticks">
+            <li>Free</li>
+            <li>Ready in 48 hours</li>
+            <li>No call, no account access</li>
+          </ul>
+          <div class="hero__trust">
+            <img src="assets/img/margarita.jpg" alt="" width="44" height="44" class="avatar-sm">
+            <p>Prepared personally by <strong>Margarita Kononiuk</strong>,<br class="br-desk"> performance marketer · Google Ads &amp; Meta Ads</p>
+          </div>
+        </div>
+
+        <div class="hero__panel" id="form">
+          <div class="card form-card" id="formCard">
+            <h2 class="form-card__title">Get your free plan</h2>
+            <p class="capacity" id="capacity" hidden></p>
+            <form id="leadForm" novalidate>
+              <div class="field">
+                <label for="email">Business email</label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="name@company.com" required>
+                <p class="hint" id="emailHint" hidden>A work email gets a faster reply.</p>
+                <p class="error" id="emailError" role="alert" hidden></p>
+              </div>
+              <div class="field">
+                <label for="website">Website</label>
+                <input id="website" name="website" type="text" inputmode="url" autocomplete="url" placeholder="company.com" required>
+                <p class="error" id="websiteError" role="alert" hidden></p>
+              </div>
+              <fieldset class="field">
+                <legend>Ad platforms you use</legend>
+                <div class="chips">
+                  <label class="chip"><input type="checkbox" name="platforms" value="google_ads"><span>Google Ads</span></label>
+                  <label class="chip"><input type="checkbox" name="platforms" value="meta_ads"><span>Meta Ads</span></label>
+                  <label class="chip"><input type="checkbox" name="platforms" value="other"><span>Other</span></label>
+                </div>
+                <p class="error" id="platformsError" role="alert" hidden></p>
+              </fieldset>
+              <!-- Honeypot: humans never see or fill this -->
+              <div class="hp" aria-hidden="true">
+                <label for="company_fax">Leave empty</label>
+                <input id="company_fax" name="company_fax" type="text" tabindex="-1" autocomplete="off">
+              </div>
+              <button class="btn btn--primary btn--block" type="submit" id="submitBtn">
+                <span class="btn__label">Get my free plan</span>
+                <span class="spinner" aria-hidden="true"></span>
+              </button>
+              <p class="error error--form" id="formError" role="alert" hidden></p>
+              <p class="attached" id="attachedNote" hidden>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 6.5l-7.8 7.8a2 2 0 0 0 2.8 2.8l7.8-7.8a4 4 0 0 0-5.7-5.7L5.8 11.4a6 6 0 0 0 8.5 8.5l6.2-6.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                Your calculator numbers are attached.
+              </p>
+              <p class="privacy-line">We use your details only to send your plan. <a class="js-privacy" href="privacy.html">Privacy policy</a></p>
+            </form>
+          </div>
+
+          <!-- Success state -->
+          <div class="card success-card" id="successCard" hidden tabindex="-1">
+            <div class="success-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h2>Got it.</h2>
+            <p class="success-card__lead">Your plan arrives at <strong id="successEmail"></strong> within 48 hours.</p>
+            <p>Want a deeper plan? Reply to the confirmation email with read-only access to your ad account, and I'll add account structure and search terms.</p>
+            <p class="muted">Meanwhile:</p>
+            <a class="btn btn--linkedin js-linkedin" href="https://www.linkedin.com/in/margarita-kononiuk" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM10 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21H10z"/></svg>
+              Connect on LinkedIn
+            </a>
+          </div>
+
+          <!-- Calculator numbers -->
+          <div class="card numbers" id="numbers" hidden>
+            <h3 class="numbers__title">Your calculator numbers <span class="muted">(attached to your request)</span></h3>
+            <dl class="numbers__grid" id="numbersGrid"></dl>
+            <button type="button" class="link-btn" id="numbersToggle" aria-expanded="false" hidden>Show all</button>
+            <p class="numbers__note">From your ROI Calculator. Something off? Change it in the extension and click the banner again.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. WHAT YOU GET -->
+    <section class="section" id="what">
+      <div class="wrap">
+        <p class="eyebrow">What you get</p>
+        <h2 class="section__title">Your ROI Fix Plan includes</h2>
+        <ol class="deliverables">
+          <li class="deliverable">
+            <span class="deliverable__num">01</span>
+            <h3>Your #1 profit lever, in dollars</h3>
+            <p id="leverItem">Worked out from your calculator numbers.</p>
+          </li>
+          <li class="deliverable">
+            <span class="deliverable__num">02</span>
+            <h3>Tracking check</h3>
+            <p>Duplicate or missing conversions make every number above wrong. I check that first.</p>
+          </li>
+          <li class="deliverable">
+            <span class="deliverable__num">03</span>
+            <h3>Landing page review</h3>
+            <p>Where visitors hesitate or drop before they convert.</p>
+          </li>
+          <li class="deliverable">
+            <span class="deliverable__num">04</span>
+            <h3>Top 3 fixes, ranked</h3>
+            <p>Specific changes, each doable in a day, by you or your team.</p>
+          </li>
+          <li class="deliverable deliverable--accent">
+            <span class="deliverable__num">05</span>
+            <h3>10-minute video + one-page plan</h3>
+            <p>Watch it when it suits you and keep the plan.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. HOW IT WORKS -->
+    <section class="section section--tint" id="how">
+      <div class="wrap">
+        <p class="eyebrow">How it works</p>
+        <h2 class="section__title">Three steps, no calls</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__dot">1</span>
+            <div>
+              <h3>Send your website</h3>
+              <p>30 seconds. Your numbers are already attached.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__dot">2</span>
+            <div>
+              <h3>I review everything</h3>
+              <p>Your numbers, your site and your live ads.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__dot">3</span>
+            <div>
+              <h3>Plan in your inbox</h3>
+              <p>Within 48 hours you get the video and the plan by email.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 5. RESULTS / CASE STUDIES -->
+    <section class="section" id="cases">
+      <div class="wrap">
+        <p class="eyebrow">Results</p>
+        <h2 class="section__title">Case studies</h2>
+        <p class="section__lead">Click a card to open the full case as a PDF.</p>
+        <div class="cases" id="casesGrid"></div>
+        <p class="disclaimer">Every account is different. These are past results, not promises.</p>
+      </div>
+    </section>
+
+    <!-- 6. ABOUT -->
+    <section class="section section--dark" id="about">
+      <div class="wrap about">
+        <figure class="about__photo">
+          <img src="assets/img/margarita.jpg" alt="Margarita Kononiuk" width="600" height="667" loading="lazy">
+        </figure>
+        <div class="about__copy">
+          <p class="eyebrow eyebrow--light">About</p>
+          <h2 class="about__title">Hi, I'm Margarita&nbsp;Kononiuk</h2>
+          <p class="about__lead">A performance marketer. I run Google Ads and Meta Ads for e-commerce and service businesses.</p>
+          <p>Before PPC I spent <strong>8+ years in sales</strong>, so I judge ads by the sales they bring, not by clicks. Every fix I suggest is tied to cost per acquisition, ROAS or profit, never to vanity metrics like CTR.</p>
+          <ul class="about__facts">
+            <li><strong>Platforms</strong> Google Ads · Meta Ads · Yandex Direct</li>
+            <li><strong>Niches</strong> E-commerce · Lead gen · Education · Local services</li>
+            <li><strong>Markets</strong> USA · Australia · Europe</li>
+          </ul>
+          <div class="about__ctas">
+            <a class="btn btn--light js-linkedin" href="https://www.linkedin.com/in/margarita-kononiuk" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM10 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21H10z"/></svg>
+              Connect on LinkedIn
+            </a>
+            <a class="btn btn--ghost-light js-to-form" href="#form">Get my free plan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. WHY FREE -->
+    <section class="section" id="why">
+      <div class="wrap narrow">
+        <p class="eyebrow">Why is it free?</p>
+        <h2 class="section__title">An honest reason</h2>
+        <p class="prose">A plan built on your numbers is the fastest way for you to see how I work, and for me to find clients I'd like to work with long term. I do <strong>5 a month</strong> so each one gets real attention. If you like the plan, you can ask me to implement it. If not, it's yours to keep.</p>
+      </div>
+    </section>
+
+    <!-- 8. FAQ -->
+    <section class="section section--tint" id="faq">
+      <div class="wrap narrow">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="section__title">Questions</h2>
+        <div class="faq">
+          <details>
+            <summary>Is it really free?</summary>
+            <p>Yes. No card, no contract, no call.</p>
+          </details>
+          <details>
+            <summary>Do I need to give access to my ad account?</summary>
+            <p>No. Your website and calculator numbers are enough. If you want a deeper plan later, you can share read-only access.</p>
+          </details>
+          <details>
+            <summary>What do you do with my numbers?</summary>
+            <p>I use them only to prepare your plan. They are never shared or published.</p>
+          </details>
+          <details>
+            <summary>Will you keep emailing me?</summary>
+            <p>At most two short follow-up emails. Reply "stop" and they stop.</p>
+          </details>
+          <details>
+            <summary>Which platforms do you cover?</summary>
+            <p>Google Ads and Meta Ads.</p>
+          </details>
+          <details>
+            <summary>What happens after the plan?</summary>
+            <p>You can implement the fixes yourself, or ask me for a quote to do it.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FINAL CTA -->
+    <section class="section final">
+      <div class="wrap final__inner">
+        <h2 class="final__title">Your plan is 30 seconds away.</h2>
+        <div class="final__ctas">
+          <a class="btn btn--primary btn--lg js-to-form" href="#form">Get my free plan</a>
+          <a class="btn btn--outline btn--lg js-linkedin" href="https://www.linkedin.com/in/margarita-kononiuk" target="_blank" rel="noopener">Prefer to chat? Connect on LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© <span id="year">2026</span> Margarita Kononiuk · Performance marketing</span>
+      <span class="footer__links">
+        <a class="js-linkedin" href="https://www.linkedin.com/in/margarita-kononiuk" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="js-privacy" href="privacy.html">Privacy policy</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
