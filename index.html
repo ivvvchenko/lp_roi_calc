@@ -16,11 +16,38 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <!-- main.js strips calculator numbers from the address bar before it loads any analytics. -->
+  <!-- Privacy: remove calculator numbers from the address bar BEFORE Google Tag Manager reads the URL.
+       The original query is kept in window.__LP_INITIAL_SEARCH for main.js. UTM parameters stay. -->
+  <script>
+    (function () {
+      try {
+        var keys = ["v","ext_ver","tab","currency","spend","cpc","cr","aov","lead_to_call","close_rate","ltv","fee","margin",
+          "revenue","profit","roi","roas","cpa","top_lever","lever_gain","state"];
+        var u = new URL(location.href);
+        window.__LP_INITIAL_SEARCH = u.search;
+        var changed = false;
+        keys.forEach(function (k) { if (u.searchParams.has(k)) { u.searchParams.delete(k); changed = true; } });
+        var q = u.searchParams.toString();
+        if (changed) history.replaceState(history.state, "", u.pathname + (q ? "?" + q : "") + u.hash);
+      } catch (e) {}
+    })();
+  </script>
+  <!-- Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-M23LH8RD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+  </script>
+  <!-- End Google Tag Manager -->
   <script src="assets/js/config.js"></script>
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M23LH8RD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <header class="topbar">
     <div class="wrap topbar__inner">
       <span class="brand">
